@@ -1,0 +1,32 @@
+name: gmeni
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  # Force the project to use a newer, compatible version
+  tflite_flutter: ^0.11.0 
+  image_picker: ^1.1.2
+  image: ^4.2.0
+  url_launcher: ^6.2.4  # For opening Google Maps
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # This section has been updated to include your model and label files.
+  assets:
+    - assets/plant_disease_model.tflite
+    - assets/labels.txt
